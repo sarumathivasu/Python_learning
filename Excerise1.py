@@ -1,21 +1,27 @@
 class Students:
-    Name:None
-    Subject1:None
-    Subject2:None
-    Subject3:None
-    Subject4:None
-    Subject5:None
+    def __init__(self,name,subject1,subject2,subject3,subject4,subject5):
+        self.Name=name
+        self.Subject1=subject1
+        self.Subject2=subject2
+        self.Subject3=subject3
+        self.Subject4=subject4
+        self.Subject5=subject5
+    def sumofsubjects(self):
+        total= (self.Subject1+self.Subject2+self.Subject3+self.Subject4+self.Subject5)
+        print(self.Name + "is total marks= "+str(total))
 
-Student_1=Students()
-Name="saru"
-Subject1=12
-Subject2=10
-Subject3=5
-Subject4=9
-Subject5=50
-Subject6=Subject1+Subject2+Subject3+Subject4+Subject5
+    def maximumnumber(self):
+        maxi=max(self.Subject1,self.Subject2,self.Subject3,self.Subject4,self.Subject5)
+        print("maximumno=", maxi)
 
-def studentss(self):
-    print(self.Name + "total marks=" + self.Subject6)
+    def manimumnumber(self):
+        mini=min(self.Subject1,self.Subject2,self.Subject3,self.Subject4,self.Subject5)
+        print("minimumno=", mini)
 
-Student_1.studentss()
+studentof_1=Students("sarumathi", 90,80,100,89,100)
+studentof_2=Students("madhu",100,100,89,99,99)
+
+studentof_1.sumofsubjects()
+studentof_1.maximumnumber()
+studentof_1.manimumnumber()
+studentof_2.sumofsubjects()
