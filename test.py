@@ -32,3 +32,7 @@ person1=Human
 # Name="sarumathi_vasu"
 # print(Name)
 # Got an error as Expected indented block - here we command pass so we need to declare variable or method with in the class
+
+
+# Constructor -  to initialize the object by setting up its attributes or state
+# __init__ : Initializes the instance.
